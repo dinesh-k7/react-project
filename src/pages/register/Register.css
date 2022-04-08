@@ -1,0 +1,105 @@
+.register {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+}
+.register-container {
+  width: 400px;
+  display: grid;
+  text-align: center;
+  box-shadow: 0 0.25em 0.625em 0 rgb(0 0 0 / 7%);
+  background-color: #ffffff;
+  padding: 48px 64px;
+  margin: 64px;
+}
+
+.form-group {
+  display: grid;
+  row-gap: 8px;
+}
+
+.form-group label {
+  justify-self: start;
+  color: #555555;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.register-textbox {
+  padding: 16px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.register-btn {
+  cursor: pointer;
+  margin-top: 24px;
+  height: 50px;
+  padding: 16px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: #0071ad;
+  border-radius: 3px;
+}
+.register-google {
+  cursor: pointer;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #0071ad;
+  color: #0071ad;
+}
+
+.login-link {
+  margin-top: 16px;
+}
+
+.text-danger {
+  justify-self: start;
+  margin-top: -24px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: red;
+}
+
+.password-error {
+  margin-top: -8px !important;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  .register-container {
+    width: 280px;
+    padding: 20px;
+  }
+  .form-group {
+    row-gap: 16px;
+  }
+}
+
+/* Medium devices  */
+@media only screen and (min-width: 768px) {
+  .register-container {
+    width: 375px;
+  }
+  .register-textbox {
+    border: 1px solid #555555;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    row-gap: 16px;
+  }
+}
